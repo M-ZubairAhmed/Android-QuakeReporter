@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/row_main_xml"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/row_main_ritcher_xml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/row_main_xml"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:hint="5.0"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/row_main_city_xml"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/row_main_ritcher_xml"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:hint="Tokyo, Japan" />
+
+    <TextView
+        android:id="@+id/row_main_date_xml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/row_main_xml"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:hint="26 Jun 2015" />
+
+</android.support.constraint.ConstraintLayout>
